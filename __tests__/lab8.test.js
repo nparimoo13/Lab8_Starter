@@ -180,6 +180,6 @@ describe('Basic user flow for Website', () => {
     let cartItems = await page.evaluate(()=>{
       return localStorage.getItem("cart");
     });
-    expect(cart).toBe('[]');
+    expect(cartItems).toBe('[]');
   });
 });
